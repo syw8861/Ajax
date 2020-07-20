@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+	<script>
+	$(document).ready(function() {
+	    $('#example').DataTable( {
+	        "ajax": "../GetAjaxDataServlet"
+	    } );
+	} );
+	</script>
+	
+	<link rel="stylesheet" type="text/css" href="ajax.css" />
+</head>
+<body>
+	<table id="example" class="display" style="width:100%">
+        <thead>
+            <tr>
+                <th>FistName</th>
+                <th>LastName</th>
+                <th>email</th>
+                <th>Job_id</th>
+                <th>hire_date</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <!-- <tfoot>
+            <tr>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Office</th>
+                <th>Extn.</th>
+                <th>Start date</th>
+                <th>Salary</th>
+            </tr>
+        </tfoot>  -->
+    </table>
+</body>
+</html>

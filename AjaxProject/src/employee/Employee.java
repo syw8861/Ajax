@@ -17,6 +17,10 @@ public class Employee {
 		this.jobId = jobId;
 	}
 	
+	public Employee() {
+		
+	}
+	
 	public Employee(int employeeId, String firstName, String email, int salary) {
 		super();
 		this.employeeId = employeeId;
